@@ -151,7 +151,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="addTwosNumbers.cpp" />
+    <ClCompile Include="findMedianSortedArrays.cpp" />
     <ClCompile Include="likou.cpp" />
+    <ClCompile Include="lengthOfLongestSubstring.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="addTwoNumbers.txt" />
+    <Text Include="findMedianSortedArrays.txt" />
+    <Text Include="lengthOfLongestSubstring.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

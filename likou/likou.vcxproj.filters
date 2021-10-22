@@ -18,5 +18,25 @@
     <ClCompile Include="likou.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="addTwosNumbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lengthOfLongestSubstring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="findMedianSortedArrays.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="addTwoNumbers.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="lengthOfLongestSubstring.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="findMedianSortedArrays.txt">
+      <Filter>源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>
