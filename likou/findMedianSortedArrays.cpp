@@ -84,8 +84,8 @@ public:
 
 void test_findMedianSortedArrays()
 {
-	std::vector<int> num1{ 1,2,6};
-	std::vector<int> num2{ 3,4,5};
+	std::vector<int> num1{ 1};
+	std::vector<int> num2{ 3};
 
 	Solution_findMedianSortedArrays2 solve;
 	double mid = solve.findMedianSortedArrays(num1, num2);
@@ -93,9 +93,48 @@ void test_findMedianSortedArrays()
 
 }
 
-//int main_findMedianSortedArrays()
-int main()
+
+struct myData {
+	int a;
+	char b;
+};
+
+void test_c()
 {
-	test_findMedianSortedArrays();
+	//计算数组的长度，
+	//一般情况下把数组名视为数组第一个元素的地址
+	//例外情况是使用 sizeof 操作符作用于数组名时，返回整个数组所占字节数；
+	int a[10] = { 0 };
+	int lena = sizeof a / sizeof a[0];
+	std::cout << "lena = " << lena << "\n";
+
+	myData data,*p;
+	sizeof(myData);		//存储myData类型的对象所占的字节数
+	sizeof data;				//data变量的类型占据的空间的字节数，相当于sizeof(myData)
+	sizeof p;					//指针p所占空间的字节数
+	sizeof *p;					//p指向的类型占据的空间的字节数，相当于sizeof(myData)
+	sizeof data.a;			//结构体成员对应类型的大小
+	sizeof myData::a;		//另一种获取结构体成员大小的方法
+
+	std::cout <<
+		"sizeof(myData) = " << sizeof(myData) << "\n" <<
+		"sizeof data = " << sizeof data << "\n" <<
+		"sizeof p = " << sizeof p << "\n" <<
+		"sizeof *p = " << sizeof *p << "\n" <<
+		"sizeof data.a = " << sizeof data.a << "\n" <<
+		"sizeof myData::a = " << sizeof myData::a << "\n";
+
+	char *c;
+	std::cout <<
+		"sizeof c = " << sizeof c << "\n" <<
+		"sizeof *c = " << sizeof *c << "\n";
+ }
+
+
+int main_findMedianSortedArrays()
+//int main()
+{
+	//test_findMedianSortedArrays();
+	test_c();
 	return 0;
 }

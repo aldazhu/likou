@@ -27,6 +27,30 @@
     <ClCompile Include="findMedianSortedArrays.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="cppReadImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="longestPalindrome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="testlange.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Trial_Division_Factorization.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="characterStatic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="reverseCharacters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HWArrayTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decoderString.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="addTwoNumbers.txt">
