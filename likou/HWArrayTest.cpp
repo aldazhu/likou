@@ -9,6 +9,59 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include <map>
+#include <iostream>
+#include <string>
+//结构体方案
+//struct bignum {
+//	int data;
+//	int frac;
+//	int sort;
+//};
+
+class mycompare {
+public:
+	bool operator()(int v1, int v2) {
+		return v1 > v2;
+	}
+};
+
+int main()
+{
+	int a[100] = { 2,3,3,2,5,6 };
+	int len = 6;//the length of the array
+	std::multimap<int, int,mycompare> multimap;//按顺序插入,num,frac
+
+	int frac[100] = { 0 };
+	for (int i = 0; i < len; i++)
+	{
+		frac[a[i]] += 1;
+	}
+
+	for (int i = 0; i < len; i++)
+	{
+		if (frac[a[i]] != 0 && a[i]!=0)//在这里就是按出现顺序去访问frac的
+		{
+			//为避免重复访问过的frac置0；
+			multimap.insert(std::make_pair(frac[a[i]], a[i]));//对第一关键字降序序排列
+			frac[a[i]] = 0;
+		}
+	}
+
+	//反向遍历
+	//std::multimap<int, int>::reverse_iterator rit;
+	std::multimap<int, int>::iterator it;
+	std::string s;
+	for (it = multimap.begin(); it != multimap.end(); it++)
+	{
+		s += std::to_string(it->second) + ",";
+	}
+	s = s.substr(0, s.size() - 1);
+	std::cout << s;
+}
+
+
+/*
 void getInput(int *arr, int *count)
 {
 	int temp;
@@ -161,7 +214,7 @@ int main()
 	
 	return 0;
 }
-
+*/
 
 ///good answer
 ////#include <bits/stdc++.h>
