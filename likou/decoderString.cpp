@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main()
+int main_decoderString()
 {
 	char s[100] = { 0 };
 	

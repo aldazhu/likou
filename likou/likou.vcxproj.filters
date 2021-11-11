@@ -51,6 +51,9 @@
     <ClCompile Include="decoderString.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="STL_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="addTwoNumbers.txt">
